@@ -1,0 +1,15 @@
+type Note {
+    id: ID!
+    name: String!
+    author: String!
+    noteContent: String!
+}
+
+type Mutation {
+    createNote(name: String!, author: String!, noteContent: String!): Note!
+}
+
+type Query {
+    getOneNote(id: Long): Note
+    getAllNotes: [Note]
+}
