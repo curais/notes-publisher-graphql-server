@@ -10,6 +10,6 @@ type Mutation {
 }
 
 type Query {
-    getOneNote(id: Long): Note
+    getOneNote(id: Int): Note 
     getAllNotes: [Note]
 }
